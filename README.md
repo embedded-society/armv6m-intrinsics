@@ -44,10 +44,6 @@ All wrappers live in the `ArmCortex` namespace and are `[[gnu::always_inline]] s
 | `svc.hpp` | `SVC<imm>` | Supervisor call with 8-bit immediate (template-encoded) |
 | `reverse.hpp` | `REV`, `REV16`, `REVSH` | Byte-order reversal of word, halfword pairs, and signed lower halfword |
 
-## Compatibility
-
-Designed to be a drop-in replacement for the ARMv6-M-relevant subset of the deprecated `ARMCortexM-CppLib::intrinsics` headers. Function names and signatures follow the existing `asmFoo()` convention.
-
 ## Licence
 
 This project is licensed under the Apache License Version 2.0.  
