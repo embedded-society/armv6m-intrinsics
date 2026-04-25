@@ -4,9 +4,6 @@ Header-only C++20 wrappers for ARMv6-M instructions that are not normally emitte
 
 Targets the **ARMv6-M** instruction set: Cortex-M0, Cortex-M0+, and Cortex-M1.
 
-For ARMv7-M (Cortex-M3) instructions, see [armv7m-intrinsics](https://github.com/embedded-society/armv7m-intrinsics).
-For ARMv7E-M / DSP (Cortex-M4) instructions, see [armv7em-intrinsics](https://github.com/embedded-society/armv7em-intrinsics).
-
 ## Usage
 
 Copy the library into your project (e.g., into `lib/`) and add it via CMake:
@@ -30,11 +27,7 @@ void critical_section() {
 }
 ```
 
-CMake is optional — every header is self-contained, so you can drop the `include/` directory anywhere on your include path and `#include` directly without using CMake at all.
-
 ## Contents
-
-All wrappers live in the `ArmCortex` namespace and are `[[gnu::always_inline]] static inline` so the compiler inlines them straight into the call site without function-call overhead.
 
 | File | Instructions | Notes |
 |------|--------------|-------|
